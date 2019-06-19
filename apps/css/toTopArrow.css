@@ -1,0 +1,55 @@
+.goTop { /*for Ionic arrow*/
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 10%;
+    background: #fff;
+    opacity: 1;
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
+}
+
+.toTop_arrow {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 10%;
+    opacity: 0.6;
+    background: #fff;
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: none;
+    z-index: 5;
+}
+
+    .toTop_arrow::before, .toTop_arrow::after {
+        width: 25px;
+        height: 6px;
+        border-radius: 3px;
+        background: #000;
+        position: absolute;
+        content: "";
+    }
+
+    .toTop_arrow::before {
+        transform: rotate(-45deg) translate(0, -50%);
+        left: 0.42rem;
+    }
+
+    .toTop_arrow::after {
+        transform: rotate(45deg) translate(0, -50%);
+        right: 0.42rem;
+    }
+
+    .toTop_arrow:focus {
+        outline: none;
+    }

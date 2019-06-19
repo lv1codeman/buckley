@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pianist Kaili Ho">
+    <meta name="author" content="Kaili Ho">
+    <title>Pianist Kaili Ho</title>
+    <!-- css -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/toTopArrow.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css" />  <!-- for fb, instagram, twitter icons -->
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery_3.4.1/jquery_3.4.1.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap_4.3.1/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap_4.3.1/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="vendor/slick-1.8.1/slick.min.js"></script>
+    <style>
+        .slick-slide {
+            height: 91vh;
+            outline: none;
+        }
+
+        .pic_01, .pic_02, .pic_03, .pic_04, .pic_05 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .pic_01 {
+            display: block;
+            height: 91vh;
+            background-image: url(img/kailiho/homepage/hp1.jpg);
+        }
+
+        .pic_02 {
+            display: block;
+            height: 91vh;
+            background-image: url(img/kailiho/homepage/hp2.jpg);
+        }
+
+        .pic_03 {
+            display: block;
+            height: 91vh;
+            background-image: url(img/kailiho/homepage/hp3.jpg);
+        }
+
+        .Title {
+            font-family: 'palatino-linotype';
+            text-align: left;
+            padding: 0px 0px;
+            margin: 16px;
+            display: block;
+            float: left;
+            margin-top: 60vh;
+            margin-left: 20vw;
+            color: #FFF;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        
+    </style>
+    <script>
+        $(function () {
+            $('.responsive').slick({
+                infinite: true,
+                speed: 1200,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                //prevArrow: '<button type="button" class="slick-prev Btn-prev">Previous</button>',
+                //nextArrow: '<button type="button" class="slick-next Btn-next">Next</button>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+        function getWidth() {
+            var s = "";
+            s += "網頁可見區域寬：" + document.body.clientWidth;
+            s += " \n網頁可見區域高：" + document.body.clientHeight;
+            s += " \n網頁可見區域寬：" + document.body.offsetWidth + " (包括邊線和捲軸的寬)";
+            s += " \n網頁可見區域高：" + document.body.offsetHeight + " (包括邊線的寬)";
+            s += " \n網頁正文全文寬：" + document.body.scrollWidth;
+            s += " \n網頁正文全文高：" + document.body.scrollHeight;
+            s += " \n網頁被卷去的高(ff)：" + document.body.scrollTop;
+            s += " \n網頁被卷去的高(ie)：" + document.documentElement.scrollTop;
+            s += " \n網頁被卷去的左：" + document.body.scrollLeft;
+            s += " \n網頁正文部分上：" + window.screenTop;
+            s += " \n網頁正文部分左：" + window.screenLeft;
+            s += " \n螢幕解析度的高：" + window.screen.height;
+            s += " \n螢幕解析度的寬：" + window.screen.width;
+            s += " \n螢幕可用工作區高度：" + window.screen.availHeight;
+            s += " \n螢幕可用工作區寬度：" + window.screen.availWidth;
+            s += " \n你的螢幕設置是 " + window.screen.colorDepth + " 位彩色";
+            s += " \n你的螢幕設置 " + window.screen.deviceXDPI + " 像素/英寸";
+            alert(s);
+        }
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <a class="navbar-brand" href="index.html">Pianist Kaili Ho</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="event_all" class="dropdown-item" href="events.html">ALL</a>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                            <a id="event2019" class="dropdown-item" href="events.html?2019">2019</a>
+                        </li>
+                        <li>
+                            <a id="event2018" class="dropdown-item" href="events.html?2018">2018</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Contact me</button>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div>
+        <div class="banner">
+            <div class="slider single-item responsive">
+                <div><div class="pic_01"><p class="Title div_text_shadow ">The quick brown fox <br />jumps over the lazy dog.</p></div></div>
+                <div><div class="pic_02"><p class="Title div_text_shadow ">The quick brown fox <br />jumps over the lazy dog.</p></div></div>
+                <div><div class="pic_03"><p class="Title div_text_shadow ">The quick brown fox <br />jumps over the lazy dog.</p></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-light fixed-bottom">
+        <div class="text-muted" style="text-align:center; padding: 5px;">&copy; Kaili Ho 2019. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Contact me -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact me</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body kellyho922@gmail.com-->
+                <div class="modal-body">
+                    <form action="https://formspree.io/s26153@gmail.com" method="POST">
+                        Your Email(Optional)<br />
+                        <input class="w-100" type="text" name="Email" placeholder="" /><br />
+                        Send a messege to me<br />
+                        <textarea class="w-100" type="text" name="Message" placeholder="type your message here..."></textarea>
+                        <input type="submit" value="Send" class="btn btn-success">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        Or your can find me at
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a href="https://www.facebook.com/kelly.ho.98229">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="https://twitter.com/kellyho922">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="https://www.instagram.com/kailiho922/">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

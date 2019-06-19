@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'bell-mt';
+    src: url('../font/bell-mt/BellMT.woff') format("woff"), url('../font/bell-mt/BellMT.ttf') format("truetype"), url('../font/bell-mt/BellMT.eot') format("embedded-opentype");
+    /*src: url('../font/bodoni-mt/BodoniMT.woff') format("woff"), url('../font/bodoni-mt/BodoniMT.ttf') format("truetype"), url('../font/bodoni-mt/BodoniMT.eot') format("embedded-opentype");*/
+    /*src: url('../font/calisto-mt/CALISTB.woff') format("woff"), url('../font/calisto-mt/CALISTB.TTF') format("truetype"), url('../font/calisto-mt/CALISTB.eot') format("embedded-opentype");*/
+    /*src: url('../font/cambria/Cambria.woff') format("woff"), url('../font/cambria/Cambria.ttf') format("truetype"), url('../font/cambria/Cambria.eot') format("embedded-opentype");*/
+    /*src: url('../font/garamond/Garamond.ttf') format("truetype");*/
+    /*src: url('../font/goudy-old-style/GOUDOS.ttf') format("truetype");*/
+    /*src: url('../font/monotype-corsiva/MTCORSVA.woff') format("woff"), url('../font/monotype-corsiva/MTCORSVA.TTF') format("truetype");*/
+    /*src: url('../font/palatino-linotype/pala.woff') format("woff"), url('../font/palatino-linotype/Palatino Linotype.ttf') format("truetype");*/
+}
+
+body {
+    font-family: 'bell-mt'; /* 在title再設定一次font-familiy也會有效果，不知道為啥 */
+    padding-top: 56px; /*navbar offset*/
+    background-color: #171717; /* #242324 */
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    padding: 3rem;
+    text-align: center;
+}
+
+/* navbar 字體調整 */
+.navbar .navbar-brand {
+    font-size: 16pt;
+}
+.navbar .nav-item {
+    font-size: 13pt;
+}
+    .navbar .nav-item .dropdown-menu {
+        font-size: 13pt;
+    }
+.navbar .btn {
+    font-size: 13pt;
+}
+
+.modal { /* 讓contact me的字是白色的 */
+    color: black;
+}
+
+/* about.html */
+.article01 {
+    color: #c5c7c5;
+}
+/* events.html*/
+.listitem {
+    color: #c5c7c5;
+    font-size: 14pt;
+    line-height: 18px;
+}
+
+    .listitem ul {
+        list-style-type: none;
+    }
+
+    .listitem li {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .listitem .listyear {
+        font-size: 20pt;
+        font-weight: 700;
+    }
+
+    .listitem .listdate {
+        color: red;
+    }
+
+    .listitem li:hover {
+        background: #333333;
+        cursor: pointer;
+    }
+
+/* vedios.html*/
+.content {
+    width: 100%;
+    text-align: center;
+    /*padding: 0 35px;
+    margin: 0 123px;*/
+}
+
+    .content h1 {
+        padding: 35px;
+        font-size: 3em;
+    }
+
+.myquote {
+    color: #c5c7c5;
+    background-color: #1F1F1F;
+    margin: 0 auto 28px auto;
+    padding: 1rem;
+    width: 50%;
+    font-size: 2em;
+}
+
+.vedioblock {
+    width: 50%;
+    margin: 28px auto auto auto;
+    border: 1px solid white;
+}
+
+
+/* 文字區塊美化 */
+.div-gradient {
+    background: linear-gradient(212deg, rgba(255, 215, 134, 1)30%, rgba(244, 157, 112, 0.8)72%);
+    background: -moz-linear-gradient(212deg, rgba(255, 215, 134, 1)30%, rgba(244, 157, 112, 0.8)72%);
+    background: -webkit-linear-gradient(212deg, rgba(255, 215, 134, 1)30%, rgba(244, 157, 112, 0.8)72%);
+    background: -o-linear-gradient(212deg, rgba(255, 215, 134, 1)30%, rgba(244, 157, 112, 0.8)72%);
+}
+
+.div_radius {
+    border-radius: 36px 0px 36px 0px;
+    -webkit-border-radius: 36px 0px 36px 0px;
+    -moz-border-radius: 36px 0px 36px 0px;
+}
+
+.div_text_shadow {
+    text-shadow: 4px 4px 5px #D49D9D;
+}
+
+.div_shadow {
+    box-shadow: 19px 31px 29px #333333;
+    -webkit-box-shadow: 19px 31px 29px #333333;
+    -moz-box-shadow: 19px 31px 29px #333333;
+}
+
+.div_radius10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.div_radius15 {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+

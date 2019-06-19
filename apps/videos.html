@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pianist Kaili Ho">
+    <meta name="author" content="Kaili Ho">
+    <title>Pianist Kaili Ho</title>
+    <!-- css -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/toTopArrow.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css" />
+    <!-- js -->
+    <script type="text/javascript" src="vendor/jquery_3.4.1/jquery_3.4.1.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap_4.3.1/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap_4.3.1/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="vendor/slick-1.8.1/slick.min.js"></script>
+    <script>
+        $(function () {
+            /*回頁首動畫*/
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 400);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <button type="button" id="BackTop" class="toTop_arrow"></button>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <a class="navbar-brand" href="index.html">Pianist Kaili Ho</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="events.html">EVENTS</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="event_all" class="dropdown-item" href="events.html">ALL</a>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li>
+                            <a id="event2019" class="dropdown-item" href="events.html?2019">2019</a>
+                        </li>
+                        <li>
+                            <a id="event2018" class="dropdown-item" href="events.html?2018">2018</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="videos.html">VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Contact me</button>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <h1>VIDEOS</h1>
+    <div id="content">
+        <div class="content">
+            <div class="myquote div_radius15">See more videos on my <a href="https://www.youtube.com/channel/UCa0WZG__JwyrLtX_o0Be4Ow" target="_blank" style="color:red; cursor:pointer; text-decoration: none;">YouTube Channel</a></div>
+            <div class="vedioblock">
+                <iframe width="99%" height="563" src="https://www.youtube.com/embed/gc9Iz15FhH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="vedioblock">
+                <iframe width="99%" height="563" src="https://www.youtube.com/embed/K2k-dq1AQO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-light">
+        <div class="text-muted" style="text-align:center; padding: 5px;">&copy; Kaili Ho 2019. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Contact me -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact me</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body kellyho922@gmail.com-->
+                <div class="modal-body">
+                    <form action="https://formspree.io/s26153@gmail.com" method="POST">
+                        Your Email(Optional)<br />
+                        <input class="w-100" type="text" name="Email" placeholder="" /><br />
+                        Send a messege to me<br />
+                        <textarea class="w-100" type="text" name="Message" placeholder="type your message here..."></textarea>
+                        <input type="submit" value="Send" class="btn btn-success">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        Or your can find me at
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a href="https://www.facebook.com/kelly.ho.98229">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="https://twitter.com/kellyho922">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="https://www.instagram.com/kailiho922/">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
